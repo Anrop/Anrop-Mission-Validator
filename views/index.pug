@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+  form(method='POST' action='/upload' enctype='multipart/form-data')
+    div.form-group
+      label(for='mission') Mission File
+      input.form-control(type='file' id='mission' name='mission')
+    button.btn.btn-primary(type='submit') Upload
